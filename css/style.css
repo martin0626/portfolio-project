@@ -1,0 +1,138 @@
+/* ==============Navigation=============== */
+.main-nav {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  list-style: none;
+}
+
+.main-nav-li-el {
+}
+
+.logo-a {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.main-nav-a-el:link,
+.main-nav-a-el:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+.main-nav-a-el:hover {
+  color: #ff6b6b;
+}
+
+.main-nav-btn {
+  border: solid 3px #f8f9fa;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-nav-btn .main-nav-a-el {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+.main-nav-btn:hover {
+  background-color: #f03e3e;
+}
+
+/* ==============HERO SECTION=============== */
+
+.hero-section {
+  background-color: #212529;
+  padding: 4.8rem 0;
+}
+
+.hero-text {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.05;
+  margin-bottom: 6.4rem;
+}
+
+.hero {
+  margin: 0 10.8rem;
+  padding: 0 3.2rem;
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.btn:link,
+.btn:visited {
+}
+
+.btn-fill:link,
+.btn-fill:visited {
+  font-size: 2rem;
+  list-style: none;
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  background-color: #f03e3e;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.btn-fill:hover {
+  background-color: #c92a2a;
+}
+
+/* ==============Description=============== */
+
+.about-me-section {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20rem 0;
+}
+
+.about-me {
+  box-shadow: 0rem 2.4rem 4.8rem rgb(0 0 0 / 55%);
+  border-radius: 4px;
+  background-color: #212529;
+  margin: 0 10.8rem;
+  gap: 12rem;
+  position: relative;
+}
+
+.about-text-el {
+  padding: 3.2rem 4.8rem;
+  color: #212529;
+  font-size: 1.8rem;
+  color: #f8f9fa;
+}
+
+.about-text {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.about-me::after {
+  content: "About Me";
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  font-size: 2.4rem;
+  background-color: #f03e3e;
+  padding: 1.2rem 2rem;
+  border-radius: 4px;
+  transform: translate(-25%, -50%);
+}

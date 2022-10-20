@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+} */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.primary-header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.secondary-header {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  margin-bottom: 2.4rem;
+}
+
+.header {
+  background-color: #212529;
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.2rem !important;
+}
+
+.margin-bottom-avr {
+  margin-bottom: 3.2rem !important;
+}
+
+.margin-bottom-large {
+  margin-bottom: 10.8rem !important;
+}
+
+/* ==============Reusable Grid=============== */
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-align-center {
+  align-items: center;
+}
