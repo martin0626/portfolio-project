@@ -100,7 +100,6 @@
 
 .about-me-section {
   width: 100%;
-  background-color: #f8f9fa;
   padding: 20rem 0;
 }
 
@@ -135,4 +134,40 @@
   padding: 1.2rem 2rem;
   border-radius: 4px;
   transform: translate(-25%, -50%);
+}
+
+/* ==============Projects=============== */
+.skills {
+  color: #212529;
+  margin: 0 10.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10.8rem;
+}
+
+.skill-header {
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+  flex: 0 0 100%;
+}
+
+.skill {
+  align-items: center;
+  gap: 10.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.skill-icons {
+  width: 50%;
+}
+
+.skill-icon-box {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
