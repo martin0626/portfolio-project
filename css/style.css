@@ -55,6 +55,7 @@
 .hero-section {
   background-color: #212529;
   padding: 4.8rem 0;
+  margin-bottom: 10rem;
 }
 
 .hero-text {
@@ -110,7 +111,20 @@
   margin: 0 10.8rem;
   gap: 12rem;
   position: relative;
+  /* animation: aboutMe;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: all 0.3s; */
 }
+
+/* @keyframes aboutMe {
+  0% {
+    left: -5000rem;
+  }
+  100% {
+    top: 2rem;
+  }
+} */
 
 .about-text-el {
   padding: 3.2rem 4.8rem;
@@ -143,6 +157,7 @@
   display: flex;
   flex-direction: column;
   gap: 10.8rem;
+  padding: 3.2rem;
 }
 
 .skill-header {
@@ -169,6 +184,10 @@
 .skill-icon-box {
   padding: 0 3rem;
   display: flex;
+}
+
+.skill-icon-box:nth-child(2) {
+  justify-content: end;
 }
 
 .skill-text {
@@ -264,9 +283,28 @@
 
 @keyframes projectText {
   0% {
-    bottom: -50px;
+    bottom: -5rem;
   }
   100% {
-    top: 240px;
+    top: 20rem;
   }
+}
+
+.project-icons a {
+  justify-self: center;
+  color: white;
+  transition: all 0.3s;
+}
+
+.project-icons a:hover {
+  color: #f03e3e;
+}
+
+.project-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-size: 4.8rem;
+  margin: 2rem 6.4rem;
 }
