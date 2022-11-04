@@ -55,7 +55,7 @@
 .hero-section {
   background-color: #212529;
   padding: 4.8rem 0;
-  margin-bottom: 10rem;
+  margin-bottom: 30rem;
 }
 
 .hero-text {
@@ -101,7 +101,7 @@
 
 .about-me-section {
   width: 100%;
-  padding: 20rem 0;
+  padding-bottom: 30rem;
 }
 
 .about-me {
@@ -111,20 +111,19 @@
   margin: 0 10.8rem;
   gap: 12rem;
   position: relative;
-  /* animation: aboutMe;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  transition: all 0.3s; */
 }
 
-/* @keyframes aboutMe {
+.about-me-animation {
+  animation-name: aboutMe;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutMe {
   0% {
-    left: -5000rem;
+    transform: translateX(-120%);
   }
-  100% {
-    top: 2rem;
-  }
-} */
+}
 
 .about-text-el {
   padding: 3.2rem 4.8rem;
@@ -370,7 +369,7 @@
 }
 
 .footer-content {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #d3d3d4;
   justify-content: space-between;
   align-items: center;
@@ -382,7 +381,7 @@
 .footer-nav {
   text-decoration: none;
   list-style: none;
-  line-height: 3.8rem;
+  line-height: 5.6rem;
   justify-self: center;
 }
 
