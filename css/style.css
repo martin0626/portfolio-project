@@ -1,4 +1,19 @@
 /* ==============Navigation=============== */
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: var(--nav-height);
+  transition: all 0.5s;
+}
+
+.hide-nav {
+  transform: translateY(calc(-1 * var(--nav-height)));
+}
+
 .main-nav {
   font-weight: 500;
   font-size: 1.8rem;
@@ -28,7 +43,7 @@
 }
 
 .main-nav-a-el:hover {
-  color: #ff6b6b;
+  color: var(--secondary-color);
 }
 
 .main-nav-btn {
@@ -47,14 +62,18 @@
 }
 
 .main-nav-btn:hover {
-  background-color: #f03e3e;
+  border: solid 3px var(--secondary-color);
+}
+
+.main-nav-btn:hover .main-nav-a-el {
+  color: var(--secondary-color);
 }
 
 /* ==============HERO SECTION=============== */
 
 .hero-section {
-  background-color: #212529;
-  padding: 4.8rem 0;
+  background-color: var(--main-color);
+  padding: 15.8rem 0 10.5rem 0;
   margin-bottom: 30rem;
 }
 
@@ -88,7 +107,7 @@
   color: #f8f9fa;
   text-decoration: none;
   padding: 1.2rem 2rem;
-  background-color: #f03e3e;
+  background-color: var(--secondary-color);
   transition: all 0.3s;
   border-radius: 4px;
 }
@@ -107,7 +126,7 @@
 .about-me {
   box-shadow: 0rem 2.4rem 4.8rem rgb(0 0 0 / 55%);
   border-radius: 4px;
-  background-color: #212529;
+  background-color: var(--main-color);
   margin: 0 10.8rem;
   gap: 12rem;
   position: relative;
@@ -127,7 +146,7 @@
 
 .about-text-el {
   padding: 3.2rem 4.8rem;
-  color: #212529;
+  color: var(--main-color);
   font-size: 1.8rem;
   color: #f8f9fa;
 }
@@ -143,7 +162,7 @@
   left: 0%;
   position: absolute;
   font-size: 2.4rem;
-  background-color: #f03e3e;
+  background-color: var(--secondary-color);
   padding: 1.2rem 2rem;
   border-radius: 4px;
   transform: translate(-25%, -50%);
@@ -151,7 +170,7 @@
 
 /* ==============Skills=============== */
 .skills {
-  color: #212529;
+  color: var(--main-color);
   margin: 0 10.8rem;
   display: flex;
   flex-direction: column;
@@ -163,7 +182,7 @@
   text-transform: uppercase;
   margin-bottom: 6.4rem;
   flex: 0 0 100%;
-  color: #212529;
+  color: var(--main-color);
   margin: 0 0 6.4rem 10.8rem;
 }
 
@@ -214,7 +233,7 @@
   text-transform: uppercase;
   margin-bottom: 6.4rem;
   flex: 0 0 100%;
-  color: #212529;
+  color: var(--main-color);
   margin: 0 0 6.4rem 10.8rem;
   margin-top: 20rem;
 }
@@ -300,7 +319,7 @@
 }
 
 .project-icons a:hover {
-  color: #f03e3e;
+  color: var(--secondary-color);
 }
 
 .project-icons {
@@ -321,7 +340,7 @@
   align-items: center;
   height: 60rem;
   width: 100%;
-  background-color: #212529;
+  background-color: var(--main-color);
   position: relative;
 }
 
@@ -336,7 +355,7 @@
   padding: 3.2rem;
   border-radius: 8px;
   transition: all 0.5s;
-  color: #212529;
+  color: var(--main-color);
   text-align: center;
   box-shadow: 0rem 2.4rem 4.8rem rgb(0 0 0 / 35%);
 }
@@ -355,7 +374,7 @@
   display: inline-block;
   text-decoration: none;
   color: #f8f9fa;
-  background-color: #212529;
+  background-color: var(--main-color);
   padding: 2.4rem 4.2rem;
   font-size: 1.8rem;
   margin-top: 3.2rem;
@@ -364,8 +383,8 @@
 
 .send-email-btn:hover {
   background-color: #f8f9fa;
-  color: #212529;
-  box-shadow: inset 0 0 0 3px #212529;
+  color: var(--main-color);
+  box-shadow: inset 0 0 0 3px var(--main-color);
 }
 
 .footer-content {
@@ -394,7 +413,7 @@
 
 .footer-nav a:hover,
 .footer-nav a:active {
-  color: #f03e3e;
+  color: var(--secondary-color);
 }
 
 .footer-icons {
@@ -412,5 +431,5 @@
 
 .footer-icons a:hover,
 .footer-icons a:active {
-  color: #f03e3e;
+  color: var(--secondary-color);
 }

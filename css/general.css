@@ -15,6 +15,13 @@ html {
   background-color: #f8f9fa;
 }
 
+/* Vars */
+body {
+  --main-color: #212529;
+  --secondary-color: #f03e3e;
+  --nav-height: 8.6rem;
+}
+
 body {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
@@ -52,8 +59,7 @@ strong {
 }
 
 .header {
-  background-color: #212529;
-  height: 9.6rem;
+  background-color: rgba(34, 38, 42, 0.823);
   display: flex;
   justify-content: space-between;
   align-items: center;
