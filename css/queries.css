@@ -1,0 +1,117 @@
+/* 
+  1rem = 1em = 16px
+*/
+
+@media (max-width: 90em) {
+  .hero-text {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .project-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .project-icons {
+    font-size: 3.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .contact-description {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 78em) {
+  .project-text {
+    font-size: 1.4rem;
+  }
+
+  .project-icons {
+    gap: 4.8rem;
+  }
+
+  .about-me {
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .projects {
+    gap: 0rem;
+  }
+
+  .skill {
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 58.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 52em) {
+  .about-text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .hero-img {
+    width: 50%;
+    order: -1;
+    padding: 1.2rem;
+  }
+
+  .about-me {
+    padding: 1.2rem;
+  }
+
+  .hero-img {
+    justify-self: center;
+  }
+
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-icon-box {
+    justify-content: center;
+  }
+
+  .skill {
+    gap: 6.4rem;
+  }
+
+  .skill-icon-box:nth-child(2) {
+    justify-content: center;
+    order: -1;
+  }
+
+  .project-text {
+    font-size: 1.8rem;
+  }
+
+  .project-icons {
+    font-size: 5rem;
+  }
+
+  @keyframes projectText {
+    0% {
+      bottom: -5rem;
+    }
+    100% {
+      top: 15rem;
+    }
+  }
+} ;
